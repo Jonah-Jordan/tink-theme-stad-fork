@@ -1,7 +1,7 @@
 {
   "name": "tink-theme-stad",
   "description": "Tink Stad Antwerpen theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git@github.com:tinkkit/tink-theme-stad.git"
