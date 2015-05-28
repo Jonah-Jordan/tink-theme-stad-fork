@@ -93,3 +93,15 @@ $pagination-link-active-bg:                  $primary;
 $upload-hover-background-color:              lighten($primary, 50%);
 $upload-border-color:                        $primary;
 $upload-bg-color-success:                    lighten($brand-success, 54%);
+
+
+/**
+ * Badges
+ */
+$badge-primary-bg:                           $primary !default;
+
+
+/**
+ * Labels
+ */
+$label-primary:                              $primary !default;
