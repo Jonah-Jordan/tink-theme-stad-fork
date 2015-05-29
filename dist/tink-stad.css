@@ -1,7 +1,13 @@
-@import url("//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 /**
  * Tink Stad Antwerpen theme
+ */
+/**
+ * Prerequisites
+ * ----------------------------------------------------------------
+ * Open Sans
+ * Font Awesome
  */
 /**
  * Variables
@@ -44,13 +50,13 @@
  * Upload
  */
 /**
- * Tabula rasa
+ * Badges
  */
 /**
- * Prerequisites
- * ----------------------------------------------------------------
- * Lato font
- * Font Awesome
+ * Labels
+ */
+/**
+ * Tabula rasa
  */
 /**
  * Variables
@@ -1238,12 +1244,15 @@ html {
       font-size: 1.0625em; } }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #fff;
   color: #333;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem ;
   line-height: 1.428571429;
   height: 100vh; }
+
+html.has-alternate-background body {
+  background-color: #f7f7f7; }
 
 input, button, select, textarea {
   font-family: inherit;
@@ -1603,7 +1612,7 @@ table {
   table > tbody + tbody {
     border-top: 2px solid #bbb; }
   table table {
-    background-color: #f7f7f7; }
+    background-color: #fff; }
 
 .table-condensed > thead > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > th, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > th, .table-condensed > tfoot > tr > td {
   padding: 0.35714rem ; }
@@ -1794,7 +1803,7 @@ table > thead > tr > td.danger, table > thead > tr > th.danger, table > thead > 
   border-radius: 4px; }
 
 .img-thumbnail {
-  background-color: #f7f7f7;
+  background-color: #fff;
   border: 1px solid #eaeaea;
   border-radius: 3px;
   line-height: 1.428571429;
@@ -1897,7 +1906,6 @@ input[type="color"], input[type="date"], input[type="datetime"], input[type="dat
   color: #5c5c5c;
   display: block;
   font-size: 1rem ;
-  height: 2.42857rem ;
   line-height: 1.428571429;
   padding: 0.42857rem 0.85714rem ;
   transition: border-color linear 0.1s, box-shadow linear 0.1s;
@@ -2216,6 +2224,10 @@ output {
  * Inspired by lack of control now and the way so many others do it, esp. looking at Semantic UI atm.
  * TH
 */
+.input-inline {
+  float: left;
+  width: auto; }
+
 .select-box-inline {
   display: inline-block;
   margin-left: 0.57143rem ; }
@@ -2541,14 +2553,16 @@ button[type="submit"], input[type="submit"], .btn-primary {
 .panel, .accordion-panel {
   border-color: #eaeaea;
   background-color: #fff;
-  border: 1px solid transparent;
+  border: 1px solid #eaeaea;
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   margin-bottom: 1.42857rem ; }
   .panel .panel-heading, .accordion-panel .panel-heading, .panel .accordion-panel-heading, .accordion-panel .accordion-panel-heading {
     color: #fff;
     background-color: #525252;
-    border-color: #eaeaea; }
+    border-color: #eaeaea;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
     .panel .panel-heading + .panel-collapse > .panel-body, .accordion-panel .panel-heading + .panel-collapse > .panel-body, .panel .accordion-panel-heading + .panel-collapse > .panel-body, .accordion-panel .accordion-panel-heading + .panel-collapse > .panel-body, .panel .panel-heading + .panel-collapse > .accordion-panel-body, .accordion-panel .panel-heading + .panel-collapse > .accordion-panel-body, .panel .accordion-panel-heading + .panel-collapse > .accordion-panel-body, .accordion-panel .accordion-panel-heading + .panel-collapse > .accordion-panel-body {
       border-top-color: #eaeaea; }
     .panel .panel-heading .badge, .accordion-panel .panel-heading .badge, .panel .accordion-panel-heading .badge, .accordion-panel .accordion-panel-heading .badge {
@@ -2689,7 +2703,7 @@ a.badge:hover, a.badge:focus {
   color: #333; }
 
 .badge-primary {
-  background-color: #cf0039;
+  background-color: #219dc8;
   color: #fff; }
 
 .badge-success {
@@ -2710,7 +2724,7 @@ a.badge:hover, a.badge:focus {
 
 .btn .badge-primary, .btn-sm .badge-primary, .btn-group-sm > .btn .badge-primary, .btn-xs .badge-primary, .btn-group-xs > .btn .badge-primary {
   background-color: #fff;
-  color: #cf0039; }
+  color: #219dc8; }
 .btn .badge-success, .btn-sm .badge-success, .btn-group-sm > .btn .badge-success, .btn-xs .badge-success, .btn-group-xs > .btn .badge-success {
   background-color: #fff;
   color: #0b0; }
@@ -2782,7 +2796,8 @@ a.badge:hover, a.badge:focus {
  */
 .nav-tabs {
   border-bottom: 1px solid #bbb;
-  border-top: 1px solid #bbb; }
+  border-top: 1px solid #bbb;
+  margin: 1.42857rem 0rem ; }
   .nav-tabs > li {
     float: left; }
     .nav-tabs > li > a {
@@ -2993,8 +3008,8 @@ html.has-open-modal {
     top: -1px; }
 
 .label-primary {
-  border-color: #cf0039;
-  color: #cf0039; }
+  border-color: #219dc8;
+  color: #219dc8; }
 
 .label-success {
   border-color: #0b0;
@@ -3495,7 +3510,7 @@ button i {
   background-clip: padding-box;
   border: 1px solid #bbb;
   border-radius: 4px;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem ;
   font-weight: normal;
   line-height: 1.428571429;
@@ -3625,7 +3640,7 @@ button i {
 .tooltip {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   display: block;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   position: absolute;
   visibility: visible;
