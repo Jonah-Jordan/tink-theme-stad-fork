@@ -98,10 +98,17 @@ $upload-bg-color-success:                    lighten($brand-success, 54%);
 /**
  * Badges
  */
-$badge-primary-bg:                           $primary !default;
+$badge-primary-bg:                           $primary;
 
 
 /**
  * Labels
  */
-$label-primary:                              $primary !default;
+$label-primary:                              $primary;
+
+
+/**
+ * Loader
+ */
+$loader-color: rgba($primary, .4);
+$loader-color-alt: rgba($primary, .8);
