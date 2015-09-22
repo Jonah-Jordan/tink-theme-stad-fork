@@ -1,6 +1,6 @@
 # Tink Stad Antwerpen theme
 
-v1.6.0
+v1.6.1
 
 ## What is this repository for?
 
