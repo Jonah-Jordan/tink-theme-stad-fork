@@ -28,7 +28,10 @@ $back-to-top-hover-bgcolor:                  rgba($primary, .8);
 /**
  * Colors
  */
-$brand-success:                              #0b0;
+$brand-success:                              #56b91a;
+$brand-info:                                 #42a5f5;
+$brand-warning:                              #ffa726;
+$brand-danger:                               #ef5350;
 
 $link-color:                                 $primary;
 $link-hover-color:                           lighten($link-color, 8%);
@@ -65,7 +68,28 @@ $datepicker-btn-today-color:                 $primary;
 /**
  * Callouts
  */
-$callout-color:                              $primary;
+$callout-color:                          mix($primary, #333, 75%);
+$callout-bgcolor:                        lighten(#e3f2fd, 1%);
+$callout-link-color:                     $link-color;
+$callout-border:                         $primary;
+
+
+$callout-color-success:                  mix($brand-success, #333, 75%);
+$callout-bgcolor-success:                lighten(#e8f5e9, 1%);
+$callout-link-color-success:             $link-color;
+$callout-border-success:                 $brand-success;
+
+
+$callout-color-warning:                  mix($brand-warning, #333, 75%);
+$callout-bgcolor-warning:                lighten(#fff3e0, 1%);
+$callout-link-color-warning:             $link-color;
+$callout-border-warning:                 $brand-warning;
+
+
+$callout-color-danger:                   mix($brand-danger, #333, 75%);
+$callout-bgcolor-danger:                 lighten(#ffebee, 1%);
+$callout-link-color-danger:              $link-color;
+$callout-border-danger:                  $brand-danger;
 
 
 /**
