@@ -1,6 +1,6 @@
 {
   "name": "tink-theme-stad",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "main": [
     "dist/tink-stad.css"
   ],
