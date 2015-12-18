@@ -60,9 +60,6 @@
  * Loader
  */
 /**
- * Timeline
- */
-/**
  * Tabula rasa
  */
 /**
@@ -4019,7 +4016,7 @@ span.table-interactive.is-loading:after {
      * Timeline list label
      */ }
     .timeline-list:before {
-      background: #219dc8;
+      background: #bbb;
       bottom: 0;
       content: '';
       left: 0;
